@@ -1,0 +1,16 @@
+.price {
+  padding: 2.3125rem 2rem 3.875rem 2.125rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.price__title {
+  margin-bottom: 0.4375rem;
+  font-size: 1.875rem;
+}
+
+.price__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4375rem;
+}

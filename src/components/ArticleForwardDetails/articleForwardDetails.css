@@ -1,0 +1,159 @@
+.forward-details {
+  padding: 1.1875rem 1.6875rem 1.125rem 1.875rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.forward-details__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forward-details__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.forward-details__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.forward-details__date {
+  padding: 0.1875rem 0.375rem;
+  place-self: flex-end;
+}
+
+.forward-details__checkbox {
+  display: none;
+}
+
+.forward-details__label {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../../assets/expand.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.forward-details__label:hover {
+  background-image: url("../../assets/expand-active.svg");
+}
+
+.forward-details__checkbox:checked + .forward-details__label {
+  background-image: url("../../assets/collapse.svg");
+}
+
+.forward-details__checkbox:checked + .forward-details__label:hover {
+  background-image: url("../../assets/collapse-active.svg");
+}
+
+.forward-details__content {
+  display: none;
+  padding: 2.1875rem 0;
+}
+
+.forward-details__content_active {
+  display: block;
+}
+
+.forward-details__number-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.forward-details__number-info-text {
+  color: #e5e5e5;
+}
+
+.forward-details__number-info-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.forward-details__name-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.forward-details__name-info-text {
+  color: #e5e5e5;
+}
+
+.forward-details__name-info-name {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.forward-details__time-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.75rem;
+  padding-bottom: 0;
+}
+
+.forward-details__time-info-time-start,
+.forward-details__time-info-time-stop {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.forward-details__time-info-arrow {
+  width: 1.875rem;
+}
+
+.forward-details__time-info-wrapper {
+  position: relative;
+}
+
+.forward-details__time-info-duration {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.forward-details__date-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.625rem;
+  color: #928f94;
+}
+
+.forward-details__town-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.625rem;
+  padding-bottom: 0;
+  text-transform: capitalize;
+}
+
+.forward-details__terminal-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0.625rem;
+  font-size: 1rem;
+  color: #928f94;
+}
+
+.forward-details__terminal-info-to {
+  text-align: right;
+}

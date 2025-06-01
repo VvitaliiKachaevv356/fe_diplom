@@ -1,0 +1,14 @@
+.next-passenger {
+  padding: 0.6875rem 1.4375rem;
+  border: 1px solid #292929;
+  border-radius: 0.3125rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #292929;
+}
+
+.next-passenger:hover {
+  border-color: #ffa800;
+  color: #ffa800;
+  cursor: pointer;
+}

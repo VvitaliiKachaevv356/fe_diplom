@@ -1,0 +1,32 @@
+.towns {
+  position: absolute;
+  top: 113%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.59375rem;
+  padding: 1.1875rem 1.875rem 0.6875rem 1.875rem;
+  width: 100%;
+  min-height: 95%;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  background: #f5f4f6;
+}
+
+.towns__item {
+  width: fit-content;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.towns__item_not-found {
+  text-transform: lowercase;
+}
+
+.towns__item:not(.towns__item_not-found):hover {
+  cursor: pointer;
+  color: #ffa800;
+}

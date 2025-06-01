@@ -1,0 +1,50 @@
+.gender {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8125rem;
+  font-weight: 400;
+}
+
+.gender__title {
+  font-size: 1rem;
+  color: #928f94;
+}
+
+.gender__switcher {
+  display: flex;
+  border: 1px solid #928f94;
+  border-radius: 0.3125rem;
+  width: 12.75rem;
+  height: 3.125rem;
+  margin-bottom: 2.8125rem;
+}
+
+.gender__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 1.875rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.gender__label_male {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.gender__label_female {
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-left: 1px solid #928f94;
+}
+
+.gender__input:checked + .gender__label {
+  background: #ffa800;
+}
+
+.gender__input:focus + .gender__label {
+  color: #fff;
+}

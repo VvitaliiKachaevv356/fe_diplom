@@ -1,0 +1,62 @@
+.header {
+  background-image: url("../../assets/banner-2.png");
+  background-color: #ffa800;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__top-container {
+  position: relative;
+  padding: 1.25rem 16.125rem 0.8125rem;
+}
+
+.header__top-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+}
+
+.header__content {
+  display: flex;
+  justify-content: center;
+  padding: 6.9375rem 9.375rem 0;
+}
+
+.header__content .search-form {
+  padding: 1.875rem 2.5rem 4.875rem;
+}
+
+.header__content .search-form__container {
+  flex-direction: row;
+  gap: 2.1875rem;
+  margin-bottom: 2.9375rem;
+}
+
+@media (max-width: 1830px) {
+  .header__content {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  .header__content .search-form {
+    padding: 4.9375rem 1.3125rem 3.25rem;
+  }
+
+  .header__content .search-form__container {
+    flex-direction: column;
+    gap: 3.8125rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 1330px) {
+  .header__top-container {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+}

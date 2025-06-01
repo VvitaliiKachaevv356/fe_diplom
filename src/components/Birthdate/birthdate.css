@@ -1,0 +1,26 @@
+.birthdate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8125rem;
+  font-weight: 400;
+}
+
+.birthdate__label {
+  font-size: 1rem;
+  color: #928f94;
+}
+
+.birthdate__input {
+  width: 15rem;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid #928f94;
+  border-radius: 0.3125rem;
+  font-size: 1.5rem;
+  color: #292929;
+}
+
+.birthdate__input::placeholder {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #c4c4c4;
+}

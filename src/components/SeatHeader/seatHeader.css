@@ -1,0 +1,28 @@
+.seat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 2rem;
+  padding-left: 1.1875rem;
+  padding-right: 1.5rem;
+}
+
+.seat-header_backward {
+  justify-content: flex-end;
+}
+
+.seat-header__return-btn {
+  padding: 0.9375rem 2.0625rem;
+  border: 1px solid #292929;
+  border-radius: 0.3125rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #292929;
+}
+
+.seat-header__return-btn:hover {
+  border-color: #ffa800;
+  color: #ffa800;
+  cursor: pointer;
+}

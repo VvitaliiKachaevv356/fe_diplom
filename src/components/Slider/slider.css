@@ -1,0 +1,44 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 72px;
+}
+
+.slider__checkbox {
+  display: none;
+}
+
+.slider__label {
+  position: relative;
+
+  width: 72px;
+  height: 19px;
+  border-radius: 9.5px; /* скругление - половина высоты */
+
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  background-color: #c4c4c4;
+}
+
+.slider__checkbox:checked + .slider__label {
+  background-color: #fcdc9d;
+}
+
+.slider__checkbox:checked + .slider__label > .slider__toggle {
+  right: 0;
+
+  background-color: #ffa800;
+}

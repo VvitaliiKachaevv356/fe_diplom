@@ -1,0 +1,60 @@
+.tooltip-price {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 120%;
+  left: -8%;
+  right: -6%;
+  padding: 0.625rem 0.625rem 0.9375rem 1.875rem;
+  border-radius: 0.3125rem;
+  background-color: #f5f4f6;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.tooltip-price__arrow {
+  position: absolute;
+  top: 0;
+  left: 43%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: #f5f4f6;
+}
+
+.tooltip-price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.tooltip-price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.tooltip-price__text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3e3c41;
+}
+
+.tooltip-price__price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.tooltip-price__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d2b2f;
+}
+
+.tooltip-price__currency {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #928f94;
+}

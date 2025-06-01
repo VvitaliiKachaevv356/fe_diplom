@@ -1,0 +1,50 @@
+.seats-count {
+  padding: 2.5rem 0 3.125rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.seats-count__title {
+  margin-bottom: 1.25rem;
+  padding-left: 1.1875rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #292929;
+}
+
+.seats-count__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.seats-count__item {
+  padding: 1.25rem 2.4375rem;
+  border: 1px solid transparent;
+}
+
+.seats-count__item_active {
+  box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.25);
+  background: #f7f6f6;
+}
+
+.seats-count__item:not(.seats-count__item_active):hover {
+  cursor: pointer;
+  border: 1px solid rgba(255, 168, 0, 0.79);
+}
+
+.seats-count__details {
+  display: flex;
+  gap: 0.3125rem;
+  border: 1px solid #928f94;
+  border-radius: 0.3125rem;
+  padding: 0.8125rem;
+  margin-bottom: 1.4375rem;
+  font-size: 1.125rem;
+  color: #292929;
+  background-color: #fff;
+}
+
+.seats-count__text:not(.seats-count__item_active > .seats-count__text) {
+  color: #928f94;
+}

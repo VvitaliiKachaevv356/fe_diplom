@@ -1,0 +1,6 @@
+.passengers-not-checked {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 2.0625rem 1.9375rem 1.875rem 1.9375rem;
+}

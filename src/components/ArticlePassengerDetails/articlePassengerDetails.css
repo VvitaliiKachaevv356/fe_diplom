@@ -1,0 +1,86 @@
+.passenger-details {
+  padding: 0.875rem 1.6875rem 0.875rem 1.875rem;
+}
+
+.passenger-details__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passenger-details__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.passenger-details__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.passenger-details__checkbox {
+  display: none;
+}
+
+.passenger-details__label {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../../assets/expand.svg") center/contain no-repeat;
+  cursor: pointer;
+}
+
+.passenger-details__label:hover {
+  background-image: url("../../assets/expand-active.svg");
+}
+
+.passenger-details__checkbox:checked + .passenger-details__label {
+  background-image: url("../../assets/collapse.svg");
+}
+
+.passenger-details__checkbox:checked + .passenger-details__label:hover {
+  background-image: url("../../assets/collapse-active.svg");
+}
+
+.passenger-details__content {
+  display: none;
+  padding: 1.8125rem 0;
+}
+
+.passenger-details__content_active {
+  display: block;
+}
+
+.passenger-details__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passenger-details__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.passenger-details__passenger {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+
+.passenger-details__price {
+  display: flex;
+  gap: 0.1875rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.passenger-details__cash {
+  color: #fff;
+}
+
+.passenger-details__currency {
+  color: #928f94;
+}

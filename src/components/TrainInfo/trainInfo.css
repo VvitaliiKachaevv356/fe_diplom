@@ -1,0 +1,74 @@
+.train-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.0625rem;
+}
+
+.train-info__wrapper-left,
+.train-info__wrapper-middle,
+.train-info__wrapper-right {
+  display: flex;
+  align-items: center;
+  gap: 1.6875rem;
+  padding: 1.0625rem 1.25rem 1.0625rem 2.1875rem;
+  background-color: #f7f6f6;
+}
+
+.train-info__wrapper-middle {
+  gap: 2.8125rem;
+}
+
+.train-info__wrapper-right {
+  gap: 0.625rem;
+  padding-top: 1.3125rem;
+}
+
+.train-info__train-number {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3e3c41;
+}
+
+.train-info__train-town-departure {
+  display: flex;
+  gap: 0.4375rem;
+  color: #928f94;
+}
+
+.train-info__train-town-from {
+  display: flex;
+  gap: 0.4375rem;
+}
+
+.train-info__train-town-from,
+.train-info__train-town-to {
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.train-info__time {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.train-info__town {
+  font-size: 1.125rem;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.train-info__terminal {
+  color: #928f94;
+}
+
+.train-info__time-content {
+  font-size: 1.125rem;
+}
+
+.train-info__hours,
+.train-info__minutes {
+  display: flex;
+  gap: 0.3125rem;
+}

@@ -1,0 +1,15 @@
+.potential-passengers {
+  position: absolute;
+  top: -4.25rem;
+  right: -0.9375rem;
+  padding-top: 0.25rem;
+  padding-right: 2.5625rem;
+}
+
+.potential-passengers__info {
+  width: 12.4375rem;
+  margin-left: auto;
+  padding: 1rem;
+  border-radius: 0.3125rem;
+  background-color: #f3f3f3;
+}

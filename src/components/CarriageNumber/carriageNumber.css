@@ -1,0 +1,12 @@
+.carriage-number {
+  position: absolute;
+  top: 0;
+  left: 4.45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.8%;
+  height: 16.78%;
+  color: #fff;
+  background-color: #000;
+}

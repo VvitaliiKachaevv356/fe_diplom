@@ -1,0 +1,30 @@
+.full-name {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(12.5rem, 1fr));
+  gap: 1.5625rem;
+}
+
+.full-name__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8125rem;
+  font-weight: 400;
+}
+
+.full-name__label {
+  font-size: 1rem;
+  color: #928f94;
+}
+
+.full-name__input {
+  padding: 0.625rem 1.25rem;
+  border: 1px solid #928f94;
+  border-radius: 0.3125rem;
+  font-size: 1.5rem;
+  color: #292929;
+}
+
+.full-name__input_invalid {
+  border-color: transparent;
+  outline: 2px solid red;
+}

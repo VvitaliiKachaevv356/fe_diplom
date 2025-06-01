@@ -1,0 +1,19 @@
+.order-page {
+  position: relative;
+  height: 67.5rem;
+  background-color: #e5e5e5;
+}
+
+.order-page__container {
+  position: absolute;
+  top: -16.0625rem;
+  left: 0;
+  right: 0;
+  padding: 3.125rem 16.0625rem;
+}
+
+@media (max-width: 1830px) {
+  .order-page__container {
+    padding: 3.125rem;
+  }
+}

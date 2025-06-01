@@ -1,0 +1,74 @@
+.tickets-view {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.125rem;
+  margin-bottom: 3.125rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.tickets-view__found {
+  display: flex;
+  gap: 0.3125rem;
+}
+
+.tickets-view__filters {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.tickets-view__sorting {
+  display: flex;
+  gap: 0.625rem;
+  min-width: 16.875rem;
+}
+
+.tickets-view__sorting-filters {
+  position: relative;
+  color: #292929;
+}
+
+.tickets-view__sorting-active-filter:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tickets-view__sorting-filter-list {
+  position: absolute;
+  top: 0;
+  left: -0.4375rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+  background: #f7f5f9;
+}
+
+.tickets-view__sorting-filter-item {
+  padding: 0.5rem 0.625rem;
+}
+
+.tickets-view__sorting-filter-item:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #ffca62;
+}
+
+.tickets-view__sorting-filter-item:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tickets-view__displaying {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.tickets-view__displaying-filter:not(
+    .tickets-view__displaying-filter_active
+  ):hover {
+  color: #292929;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tickets-view__displaying-filter_active {
+  color: #292929;
+}

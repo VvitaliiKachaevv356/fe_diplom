@@ -1,0 +1,9 @@
+.logo {
+  position: relative;
+  z-index: 1;
+  width: 5rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}

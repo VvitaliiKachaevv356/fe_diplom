@@ -1,0 +1,127 @@
+.carriage {
+  display: flex;
+  flex-direction: column;
+  gap: 4.25rem;
+  padding-bottom: 4.3125rem;
+}
+
+.carriage__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.8125rem;
+  padding-right: 3.125rem;
+}
+
+.carriage__column_carriage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.875rem 2.3125rem 1.125rem;
+  background-color: #ffd98f;
+}
+
+.carriage__carriage-number {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #292929;
+}
+
+.carriage__carriage-text {
+  position: relative;
+  top: -0.8125rem;
+  padding-left: 0.125rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #292929;
+}
+
+.carriage__column_seats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2.0625rem 0.625rem 0.625rem 2.5rem;
+}
+
+.carriage__seats-short-info {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.carriage__seats-short-info-text {
+  color: #928f94;
+}
+
+.carriage__seats-short-info-count {
+  color: #000;
+}
+
+.carriage__seats-full-info {
+  display: flex;
+  gap: 0.8125rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.carriage__seats-full-info-count {
+  font-weight: 700;
+}
+
+.carriage__column_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.0625rem 0.625rem 0.625rem 0;
+}
+
+.carriage__price-info-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.carriage__price-info-price {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.carriage__price-info-currency {
+  color: #928f94;
+}
+
+.carriage__column_service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.0625rem 0.625rem 0.625rem;
+}
+
+.carriage__service-info {
+  display: flex;
+  gap: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.carriage__service-info-text {
+  color: #928f94;
+}
+
+.carriage__service-info-company {
+  color: #c4c4c4;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .carriage__content {
+    gap: 0.9375rem;
+    padding-right: 1.25rem;
+  }
+}

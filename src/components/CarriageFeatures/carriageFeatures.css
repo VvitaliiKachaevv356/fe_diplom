@@ -1,0 +1,50 @@
+.carriage-features {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.carriage-features__item {
+  width: 2.25rem;
+  height: 2.1875rem;
+  background-repeat: no-repeat;
+}
+
+.carriage-features__item_air-condition_included {
+  background-image: url("../../assets/box-condition-included.svg");
+}
+
+.carriage-features__item_wifi {
+  background-image: url("../../assets/box-wifi.svg");
+}
+
+.carriage-features__item_wifi_active {
+  background-image: url("../../assets/box-wifi-active.svg");
+}
+
+.carriage-features__item_wifi:hover,
+.carriage-features__item_wifi_active:hover {
+  cursor: pointer;
+  background-image: url("../../assets/box-wifi-hovered.svg");
+}
+
+.carriage-features__item_bed-sheets {
+  background-image: url("../../assets/box-bed-sheets.svg");
+}
+
+.carriage-features__item_bed-sheets_active {
+  background-image: url("../../assets/box-bed-sheets-active.svg");
+}
+
+.carriage-features__item_bed-sheets:hover,
+.carriage-features__item_bed-sheets_active:hover {
+  cursor: pointer;
+  background-image: url("../../assets/box-bed-sheets-hovered.svg");
+}
+
+.carriage-features__item_bed-sheets_included {
+  background-image: url("../../assets/box-bed-sheets-included.svg");
+}
+
+.carriage-features__item_tea_included {
+  background-image: url("../../assets/box-tea-included.svg");
+}

@@ -1,0 +1,15 @@
+.tittle {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.tittle__text_first {
+  font-weight: 100;
+}
+
+.tittle__text_second {
+  font-weight: 700;
+}

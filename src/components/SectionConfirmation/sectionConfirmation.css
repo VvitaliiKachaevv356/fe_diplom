@@ -1,0 +1,15 @@
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8125rem;
+}
+
+.confirmation > .next-page {
+  padding-top: 4.8125rem;
+  padding-bottom: 8.25rem;
+}
+
+.confirmation > .next-page__navigation-link {
+  padding-left: 1.6875rem;
+  padding-right: 1.6875rem;
+}

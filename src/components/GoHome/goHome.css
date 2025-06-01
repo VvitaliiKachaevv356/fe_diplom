@@ -1,0 +1,17 @@
+.go-home {
+  padding: 0.9375rem 0.6875rem;
+  border: 1px solid #3e3c41;
+  border-radius: 0.3125rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #292929;
+}
+
+.go-home:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+}
