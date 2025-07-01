@@ -24,7 +24,7 @@ import {
 import { fetchTrains } from '../../redux/trainsSlice';
 
 import Destination from '../Destination/Destination';
-import MyDatePicker from '../MyDatePicker/MyDatePicker';
+import MyDatePicker from '../UI/MyDatePicker/MyDatePicker';
 import './searchForm.css';
 
 const SearchForm = () => {

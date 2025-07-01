@@ -1,28 +1,30 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-import HeaderOrder from "../../components/HeaderOrder/HeaderOrder";
-import SectionOrder from "../../components/SectionOrder/SectionOrder";
+import HeaderOrder from '../../components/Sections/HeaderOrder/HeaderOrder';
+import SectionOrder from '../../components/Section/SectionOrder/SectionOrder';
 
-import "./order.css";
+import './order.css';
 
 const Order = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // переход по якорной ссылке:
     if (location.hash) {
-      const element = document.getElementById(location.hash.slice(1));
+      const element = document.getElementById(location.hash.slice(1)); // убираем "#" из хеша
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' }); // плавная прокрутка
       }
     } else {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0); // прокручиваем страницу вначало при смене роута
     }
-  }, [location]);
+  }, [location]); // Срабатывает при изменении маршрута
 
   return (
     <>
       <HeaderOrder />
+
       <main className="order-page">
         <div className="order-page__container">
           <SectionOrder />

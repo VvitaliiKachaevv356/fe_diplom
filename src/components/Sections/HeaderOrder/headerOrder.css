@@ -1,0 +1,49 @@
+.header-order {
+  background-image: url("../../../assets/banner-3.png");
+  background-color: #ffa800;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-order__top-container {
+  position: relative;
+  padding: 1.25rem 16.125rem 0.8125rem;
+}
+
+.header-order__top-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-order__title {
+  padding: 22.0625rem 16.125rem 15rem 16.125rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 1830px) {
+  .header-order__title {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1330px) {
+  .header-order__top-container {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  .header-order__title {
+    padding-top: 9.375rem;
+    font-size: 3.75rem;
+  }
+}

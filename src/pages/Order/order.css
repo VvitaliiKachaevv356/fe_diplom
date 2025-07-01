@@ -1,19 +1,22 @@
 .order-page {
   position: relative;
-  height: 67.5rem;
+
+  height: 1080px;
+
   background-color: #e5e5e5;
 }
 
 .order-page__container {
   position: absolute;
-  top: -16.0625rem;
+  top: -257px;
   left: 0;
   right: 0;
-  padding: 3.125rem 16.0625rem;
+
+  padding: 50px 257px;
 }
 
 @media (max-width: 1830px) {
   .order-page__container {
-    padding: 3.125rem;
+    padding: 50px;
   }
 }

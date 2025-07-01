@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/store';
 
-import Header from "../../components/Header/Header";
-import LineCurrent from "../../components/LineCurrent/LineCurrent";
-import Loader from "../../components/Loader/Loader";
-import SectionLastTickets from "../../components/SectionLastTickets/SectionLastTickets";
-import SectionSeats from "../../components/SectionSeats/SectionSeats";
-import SectionSettings from "../../components/SectionSettings/SectionSettings";
+import Header from '../../components/Sections/Header/Header';
+import LineCurrent from '../../components/UI/LineCurrent/LineCurrent';
+import Loader from '../../components/UI/Loader/Loader';
+import SectionLastTickets from '../../components/Section/SectionLastTickets/SectionLastTickets';
+import SectionSeats from '../../components/Section/SectionSeats/SectionSeats';
+import SectionSettings from '../../components/Section/SectionSettings/SectionSettings';
 
 const Seats = () => {
   const location = useLocation();
@@ -18,15 +18,16 @@ const Seats = () => {
   );
 
   useEffect(() => {
+    // переход по якорной ссылке:
     if (location.hash) {
-      const element = document.getElementById(location.hash.slice(1));
+      const element = document.getElementById(location.hash.slice(1)); // убираем "#" из хеша
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' }); // плавная прокрутка
       }
     } else {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0); // прокручиваем страницу вначало при смене роута
     }
-  }, [location]);
+  }, [location]); // Срабатывает при изменении маршрута
 
   return (
     <>

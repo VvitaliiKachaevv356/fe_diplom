@@ -1,23 +1,25 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import LineCurrent from "../../components/LineCurrent/LineCurrent";
-import SectionDetails from "../../components/SectionDetails/SectionDetails";
-import SectionPayment from "../../components/SectionPayment/SectionPayment";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+import Header from '../../components/Sections/Header/Header';
+import LineCurrent from '../../components/UI/LineCurrent/LineCurrent';
+import SectionDetails from '../../components/Section/SectionDetails/SectionDetails';
+import SectionPayment from '../../components/Shared/SectionPayment/SectionPayment';
 
 const Payment = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // переход по якорной ссылке:
     if (location.hash) {
-      const element = document.getElementById(location.hash.slice(1));
+      const element = document.getElementById(location.hash.slice(1)); // убираем "#" из хеша
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' }); // плавная прокрутка
       }
     } else {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0); // прокручиваем страницу вначало при смене роута
     }
-  }, [location]);
+  }, [location]); // Срабатывает при изменении маршрута
 
   return (
     <>

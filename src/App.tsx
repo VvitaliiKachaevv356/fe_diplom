@@ -8,7 +8,7 @@ import {
 import Confirmation from "./pages/Confirmation/Confirmation";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
-import Layout from "./components/Layout/Layout";
+import Layout from "./components/Sections/Layout/Layout";
 import Order from "./pages/Order/Order";
 import Passengers from "./pages/Passengers/Passengers";
 import Payment from "./pages/Payment/Payment";
