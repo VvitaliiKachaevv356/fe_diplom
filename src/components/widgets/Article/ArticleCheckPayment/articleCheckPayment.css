@@ -1,0 +1,29 @@
+.check-payment {
+  background-color: #fff;
+}
+
+.check-payment__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-payment__type {
+  width: 100%;
+  padding: 44px 33px 74px 33px;
+
+  font-weight: 400;
+  font-size: 24px;
+  color: #292929;
+}
+
+.check-payment__sidebar {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  width: 387px;
+
+  padding: 23px 21px 20px 23px;
+  border-left: 1px dashed #e5e5e5;
+}

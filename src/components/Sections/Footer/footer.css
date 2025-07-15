@@ -38,25 +38,25 @@
 .footer__up {
   width: 2.25rem;
   height: 2.25rem;
-  background-image: url("../../assets/up.svg");
+  background-image: url("../../../assets/up.svg");
 }
 
 .footer__up:focus,
 .footer__up:hover {
   cursor: pointer;
-  background-image: url("../../assets/up-active.svg");
+  background-image: url("../../../assets/up-active.svg");
 }
 
 .footer__down {
   width: 2.25rem;
   height: 2.25rem;
-  background-image: url("../../assets/down.svg");
+  background-image: url("../../../assets/down.svg");
 }
 
 .footer__down:focus,
 .footer__down:hover {
   cursor: pointer;
-  background-image: url("../../assets/down-active.svg");
+  background-image: url("../../../assets/down-active.svg");
 }
 
 @media (max-width: 1330px) {

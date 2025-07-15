@@ -1,0 +1,87 @@
+.passenger-details {
+  padding: 14px 27px 14px 30px;
+}
+
+.passenger-details__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passenger-details__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.passenger-details__title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.passenger-details__checkbox {
+  display: none;
+}
+
+.passenger-details__label {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../../assets/expand.svg");
+}
+
+.passenger-details__label:hover {
+  background-image: url("../../../../assets/expand-active.svg");
+  cursor: pointer;
+}
+
+.passenger-details__checkbox:checked + .passenger-details__label {
+  background-image: url("../../../../assets/collapse.svg");
+}
+
+.passenger-details__checkbox:checked + .passenger-details__label:hover {
+  background-image: url("../../../../assets/collapse-active.svg");
+}
+
+.passenger-details__content {
+  display: none;
+
+  padding: 29px 0 29px 0;
+}
+
+.passenger-details__content_active {
+  display: block;
+}
+
+.passenger-details__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passenger-details__row:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.passenger-details__passenger {
+  font-weight: 400;
+  font-size: 18px;
+  color: #e5e5e5;
+}
+
+.passenger-details__price {
+  display: flex;
+  gap: 3px;
+
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.passenger-details__cash {
+  color: #fff;
+}
+
+.passenger-details__currency {
+  color: #928f94;
+}

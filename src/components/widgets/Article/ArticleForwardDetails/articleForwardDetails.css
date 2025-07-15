@@ -1,0 +1,173 @@
+.forward-details {
+  padding: 19px 27px 18px 30px;
+
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.forward-details__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forward-details__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.forward-details__title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.forward-details__date {
+  padding: 3px 6px;
+  place-self: flex-end;
+}
+
+.forward-details__checkbox {
+  display: none;
+}
+
+.forward-details__label {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../../assets/expand.svg");
+}
+
+.forward-details__label:hover {
+  background-image: url("../../../../assets/expand-active.svg");
+  cursor: pointer;
+}
+
+.forward-details__checkbox:checked + .forward-details__label {
+  background-image: url("../../../../assets/collapse.svg");
+}
+
+.forward-details__checkbox:checked + .forward-details__label:hover {
+  background-image: url("../../../../assets/collapse-active.svg");
+}
+
+.forward-details__content {
+  display: none;
+
+  padding: 35px 0 35px 0;
+}
+
+.forward-details__content_active {
+  display: block;
+}
+
+/* номер поезда */
+.forward-details__number-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.forward-details__number-info-text {
+  color: #e5e5e5;
+}
+
+.forward-details__number-info-number {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+}
+
+/* название поезда */
+.forward-details__name-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.forward-details__name-info-text {
+  color: #e5e5e5;
+}
+
+.forward-details__name-info-name {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+/* время */
+.forward-details__time-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.forward-details__time-info-time-start,
+.forward-details__time-info-time-stop {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.forward-details__time-info-arrow {
+  width: 30px;
+}
+
+.forward-details__time-info-wrapper {
+  position: relative;
+}
+
+.forward-details__time-info-duration {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* дата */
+.forward-details__date-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  color: #928f94;
+}
+
+/* города */
+.forward-details__town-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 10px;
+  padding-bottom: 0px;
+
+  text-transform: capitalize;
+}
+
+/* вокзалы */
+.forward-details__terminal-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 0px;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  color: #928f94;
+}
+
+.forward-details__terminal-info-to {
+  text-align: right;
+}

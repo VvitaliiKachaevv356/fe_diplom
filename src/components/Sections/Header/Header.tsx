@@ -1,6 +1,6 @@
-import Logo from '../Logo/Logo';
-import Menu from '../Menu/Menu';
-import SearchForm from '../../Features/booking/SearchForm/SearchForm';
+import Logo from '../../UI/other/Logo/Logo';
+import Menu from '../../sections/Menu/Menu';
+import SearchForm from '../../widgets/SearchForm/SearchForm/SearchForm';
 
 import './header.css';
 

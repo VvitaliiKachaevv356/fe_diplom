@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import HeaderOrder from '../../components/Sections/HeaderOrder/HeaderOrder';
-import SectionOrder from '../../components/Section/SectionOrder/SectionOrder';
+import HeaderOrder from '../../components/sections/HeaderOrder/HeaderOrder';
+import SectionOrder from '../../components/sections/SectionOrder/SectionOrder';
 
 import './order.css';
 

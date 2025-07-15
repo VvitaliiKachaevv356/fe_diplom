@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Header from '../../components/Sections/Header/Header';
-import LineCurrent from '../../components/UI/LineCurrent/LineCurrent';
-import SectionDetails from '../../components/Section/SectionDetails/SectionDetails';
-import SectionPassengers from '../../components/Section/SectionPassengers/SectionPassengers';
+import Header from '../../components/sections/Header/Header';
+import LineCurrent from '../../components/UI/other/LineCurrent/LineCurrent';
+import SectionDetails from '../../components/sections/SectionDetails/SectionDetails';
+import SectionPassengers from '../../components/sections/SectionPassengers/SectionPassengers';
 
 const Passengers = () => {
   const location = useLocation();

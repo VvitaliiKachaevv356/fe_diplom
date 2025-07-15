@@ -1,0 +1,63 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 35px;
+  align-items: start;
+}
+
+.contacts__link {
+  flex-shrink: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+}
+
+.contacts__link_call {
+  background-image: url("../../../../assets/phone.svg");
+}
+
+.contacts__link_call:focus,
+.contacts__link_call:hover {
+  cursor: pointer;
+  background-image: url("../../../../assets/phone-active.svg");
+}
+
+.contacts__link_email {
+  background-image: url("../../../../assets/mail.svg");
+}
+
+.contacts__link_email:focus,
+.contacts__link_email:hover {
+  background-image: url("../../../../assets/mail-active.svg");
+}
+
+.contacts__link_skype {
+  background-image: url("../../../../assets/skype.svg");
+}
+
+.contacts__link_skype:focus,
+.contacts__link_skype:hover {
+  background-image: url("../../../../assets/skype-active.svg");
+}
+
+.contacts__link_maps {
+  background-image: url("../../../../assets/map.svg");
+}
+
+.contacts__link_maps:focus,
+.contacts__link_maps:hover {
+  background-image: url("../../../../assets/map-active.svg");
+}
+
+.contacts__info {
+  font-weight: 400;
+  font-size: 24px;
+  color: #e5e5e5;
+}

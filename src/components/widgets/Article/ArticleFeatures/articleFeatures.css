@@ -1,0 +1,37 @@
+.features {
+  padding: 29px 32px 25px 63px;
+}
+
+.features__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.features__wrapper {
+  display: flex;
+  gap: 28px;
+}
+
+.features__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+}
+
+.features__icon {
+  object-fit: none;
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}

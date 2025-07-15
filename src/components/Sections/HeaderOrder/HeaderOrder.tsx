@@ -1,5 +1,5 @@
-import Logo from '../Logo/Logo';
-import Menu from '../Menu/Menu';
+import Logo from '../../UI/other/Logo/Logo';
+import Menu from '../../sections/Menu/Menu';
 
 import './headerOrder.css';
 

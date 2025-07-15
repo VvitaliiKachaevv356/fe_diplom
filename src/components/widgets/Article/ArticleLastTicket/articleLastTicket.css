@@ -1,0 +1,81 @@
+.last-ticket {
+  padding: 18px 9px 7px 9px;
+
+  background-color: #fff;
+  outline: 1px solid #c4c4c4;
+
+  box-shadow: 0 2px 2px 0 rgba(62, 60, 65, 0.25);
+}
+
+.last-ticket:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.last-ticket__towns {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 2px;
+
+  font-weight: 400;
+  font-size: 20px;
+  color: #292929;
+  text-transform: capitalize;
+}
+
+.last-ticket__terminals {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #928f94;
+}
+
+.last-ticket__terminal-to {
+  text-align: end;
+}
+
+.last-ticket__info {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 10px;
+}
+
+.last-ticket__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+.last-ticket__price {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.last-ticket__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #928f94;
+}
+
+.last-ticket__cash {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffa800;
+}
+
+.last-ticket__currency {
+  font-weight: 700;
+  font-size: 36px;
+  color: #928f94;
+}

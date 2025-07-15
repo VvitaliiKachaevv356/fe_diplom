@@ -8,7 +8,7 @@ import {
 import Confirmation from "./pages/Confirmation/Confirmation";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
-import Layout from "./components/Sections/Layout/Layout";
+import Layout from "./components/Layout/Layout";
 import Order from "./pages/Order/Order";
 import Passengers from "./pages/Passengers/Passengers";
 import Payment from "./pages/Payment/Payment";
@@ -16,7 +16,8 @@ import Seats from "./pages/Seats/Seats";
 import Trains from "./pages/Trains/Trains";
 
 const App = () => {
-  const router = createBrowserRouter(
+  // 6-ая версия React Router:
+  const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
         <Route index element={<Home />} />
@@ -28,10 +29,12 @@ const App = () => {
         <Route path="seats" element={<Seats />} />
       </Route>
     ),
-    { basename: import.meta.env.BASE_URL }
+    {
+      basename: import.meta.env.BASE_URL, // значение 'basename' - из конфига vite
+    }
   );
 
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={routes} />;
 };
 
 export default App;

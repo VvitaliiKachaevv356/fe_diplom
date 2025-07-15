@@ -1,0 +1,86 @@
+.carriage-type {
+  padding: 28px 18px 20px 18px;
+  border-top: 1px dotted #c4c4c4;
+}
+
+.carriage-type__title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #292929;
+}
+
+.carriage-type__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 75px;
+  place-items: start;
+
+  padding: 32px 16px 5px 16px;
+}
+
+.carriage-type__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+
+  font-weight: 400;
+  font-size: 24px;
+  color: #292929;
+}
+
+.carriage-type__item_active {
+  color: #ffa800;
+}
+
+.carriage-type__item:hover:not(.carriage-type__item_active) {
+  color: #ffa800;
+  cursor: pointer;
+}
+
+.carriage-type__icon {
+  height: 50px;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+  background-size: contain;
+}
+
+.carriage-type__icon_seat {
+  background-image: url("../../../../assets/seat.svg");
+}
+
+.carriage-type__item_active > .carriage-type__icon_seat,
+.carriage-type__item:hover > .carriage-type__icon_seat {
+  background-image: url("../../../../assets/seat-active.svg");
+}
+
+.carriage-type__icon_platzkart {
+  background-image: url("../../../../assets/platzkart.svg");
+}
+
+.carriage-type__item_active > .carriage-type__icon_platzkart,
+.carriage-type__item:hover > .carriage-type__icon_platzkart {
+  background-image: url("../../../../assets/platzkart-active.svg");
+}
+
+.carriage-type__icon_compartment {
+  background-image: url("../../../../assets/compartment.svg");
+}
+
+.carriage-type__item_active > .carriage-type__icon_compartment,
+.carriage-type__item:hover > .carriage-type__icon_compartment {
+  background-image: url("../../../../assets/compartment-active.svg");
+}
+
+.carriage-type__icon_lux {
+  background-image: url("../../../../assets/lux.svg");
+}
+
+.carriage-type__item_active > .carriage-type__icon_lux,
+.carriage-type__item:hover > .carriage-type__icon_lux {
+  background-image: url("../../../../assets/lux-active.svg");
+}

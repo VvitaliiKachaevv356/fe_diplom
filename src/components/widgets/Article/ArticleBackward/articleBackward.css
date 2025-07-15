@@ -1,0 +1,62 @@
+.backward {
+  padding: 25px 27px 34px 27px;
+  color: #fff;
+}
+
+.backward__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.backward__wrapper {
+  display: flex;
+}
+
+.backward__icon {
+  margin-right: 12px;
+}
+
+.backward__title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.backward__checkbox {
+  display: none;
+}
+
+.backward__label {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../../assets/expand.svg");
+}
+
+.backward__label:hover {
+  background-image: url("../../../../assets/expand-active.svg");
+  cursor: pointer;
+}
+
+.backward__checkbox:checked + .backward__label {
+  background-image: url("../../../../assets/collapse.svg");
+}
+
+.backward__checkbox:checked + .backward__label:hover {
+  background-image: url("../../../../assets/collapse-active.svg");
+}
+
+.backward__content {
+  display: none;
+
+  padding: 20px 0 50px 0;
+}
+
+.backward__content_active {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+}

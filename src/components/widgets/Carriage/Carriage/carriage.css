@@ -1,0 +1,152 @@
+.carriage {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+
+  padding-bottom: 69px;
+}
+
+/* функциональность на случай отображения нескольких вагонов сразу: */
+/* .carriage:nth-child(2n + 1) {
+  padding-top: 33px;
+  border-top: 1px dotted #c4c4c4;
+} */
+
+.carriage__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+
+  padding-right: 50px;
+}
+
+/* первая колонка */
+.carriage__column_carriage {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 37px 18px 37px;
+
+  background-color: #ffd98f;
+}
+
+.carriage__carriage-number {
+  font-weight: 700;
+  font-size: 72px;
+  color: #292929;
+}
+
+.carriage__carriage-text {
+  position: relative;
+  top: -13px;
+
+  padding-left: 2px;
+
+  font-weight: 400;
+  font-size: 24px;
+  color: #292929;
+}
+
+/* вторая колонка */
+.carriage__column_seats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 33px 10px 10px 40px;
+}
+
+.carriage__seats-short-info {
+  display: flex;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.carriage__seats-short-info-text {
+  color: #928f94;
+}
+
+.carriage__seats-short-info-count {
+  color: #000;
+}
+
+.carriage__seats-full-info {
+  display: flex;
+  gap: 13px;
+
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+
+.carriage__seats-full-info-count {
+  font-weight: 700;
+}
+
+/* третья колонка */
+.carriage__column_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 33px 10px 10px 0px;
+}
+
+.carriage__price-info-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #928f94;
+}
+
+.carriage__price-info-price {
+  display: flex;
+  gap: 8px;
+
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.carriage__price-info-currency {
+  color: #928f94;
+}
+
+/* четвертая колонка */
+.carriage__column_service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 33px 10px 10px 10px;
+}
+
+.carriage__service-info {
+  display: flex;
+  gap: 10px;
+
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.carriage__service-info-text {
+  color: #928f94;
+}
+
+.carriage__service-info-company {
+  color: #c4c4c4;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .carriage__content {
+    gap: 15px;
+
+    padding-right: 20px;
+  }
+}

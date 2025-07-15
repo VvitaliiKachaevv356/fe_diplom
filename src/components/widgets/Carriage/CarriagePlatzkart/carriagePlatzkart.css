@@ -1,0 +1,467 @@
+.carriage-platzkart {
+  --width-seat: 2.7%; /* 30px */
+  --height-seat: 21.58%; /* 39.5px */
+
+  --width-opposite-seat: 4.63%; /* 52.5px */
+  --height-opposite-seat: 14.21%; /* 26px */
+
+  --top-even-seat: 21.58%; /* 39.5px */
+  --top-odd-seat: 40.98%; /* 75px */
+  --top-opposite-seat: 78.69%; /* 144px */
+
+  --left-row-1: 14.92%; /* 169px */
+  --left-row-2: 21.36%; /* 242px */
+  --left-row-3: 24.36%; /* 276px */
+  --left-row-4: 30.98%; /* 351px */
+  --left-row-5: 34.07%; /* 386px */
+  --left-row-6: 40.6%; /* 460px */
+  --left-row-7: 43.69%; /* 495px */
+  --left-row-8: 50.31%; /* 570px */
+  --left-row-9: 53.4%; /* 605px */
+  --left-row-10: 60.02%; /* 680px */
+  --left-row-11: 63.02%; /* 714px */
+  --left-row-12: 69.64%; /* 789px */
+  --left-row-13: 72.73%; /* 824px */
+  --left-row-14: 79.35%; /* 899px */
+  --left-row-15: 82.39%; /* 933.5px */
+  --left-row-16: 88.79%; /* 1006px */
+
+  position: relative;
+}
+
+.carriage-platzkart__img {
+  display: block;
+  width: 100%;
+}
+
+.carriage-platzkart__scheme {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.carriage-platzkart__seat {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  background-color: #bbbbbb;
+}
+
+.carriage-platzkart__seat_available {
+  color: #000;
+  background-color: #ebebeb;
+}
+
+.carriage-platzkart__seat_available:hover {
+  z-index: 1;
+
+  cursor: pointer;
+  outline: 2px solid #ffa800;
+}
+
+.carriage-platzkart__seat_active {
+  color: #fff;
+
+  background-color: #ffa800;
+}
+
+.carriage-platzkart__seat_active:hover {
+  z-index: 1;
+
+  color: #000;
+
+  cursor: pointer;
+  outline: 2px solid #ffa800;
+}
+
+.carriage-platzkart__seat_1 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-1);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_2 {
+  top: var(--top-even-seat);
+  left: var(--left-row-1);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_3 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-2);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_4 {
+  top: var(--top-even-seat);
+  left: var(--left-row-2);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_5 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-3);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_6 {
+  top: var(--top-even-seat);
+  left: var(--left-row-3);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_7 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-4);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_8 {
+  top: var(--top-even-seat);
+  left: var(--left-row-4);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_9 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-5);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_10 {
+  top: var(--top-even-seat);
+  left: var(--left-row-5);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_11 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-6);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_12 {
+  top: var(--top-even-seat);
+  left: var(--left-row-6);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_13 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-7);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_14 {
+  top: var(--top-even-seat);
+  left: var(--left-row-7);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_15 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-8);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_16 {
+  top: var(--top-even-seat);
+  left: var(--left-row-8);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_17 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-9);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_18 {
+  top: var(--top-even-seat);
+  left: var(--left-row-9);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_19 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-10);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_20 {
+  top: var(--top-even-seat);
+  left: var(--left-row-10);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_21 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-11);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_22 {
+  top: var(--top-even-seat);
+  left: var(--left-row-11);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_23 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-12);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_24 {
+  top: var(--top-even-seat);
+  left: var(--left-row-12);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_25 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-13);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_26 {
+  top: var(--top-even-seat);
+  left: var(--left-row-13);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_27 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-14);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_28 {
+  top: var(--top-even-seat);
+  left: var(--left-row-14);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_29 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-15);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_30 {
+  top: var(--top-even-seat);
+  left: var(--left-row-15);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_31 {
+  top: var(--top-odd-seat);
+  left: var(--left-row-16);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+.carriage-platzkart__seat_32 {
+  top: var(--top-even-seat);
+  left: var(--left-row-16);
+
+  width: var(--width-seat);
+  height: var(--height-seat);
+}
+
+/* -------------------- места напротив -------------------- */
+
+.carriage-platzkart__seat_33 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-1);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_34 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-1) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_35 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-3);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_36 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-3) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_37 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-5);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_38 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-5) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_39 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-7);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_40 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-7) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_41 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-9);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_42 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-9) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_43 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-11);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_44 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-11) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_45 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-13);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_46 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-13) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_47 {
+  top: var(--top-opposite-seat);
+  left: var(--left-row-15);
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}
+
+.carriage-platzkart__seat_48 {
+  top: var(--top-opposite-seat);
+  left: calc(var(--left-row-15) + var(--width-opposite-seat));
+
+  width: var(--width-opposite-seat);
+  height: var(--height-opposite-seat);
+}

@@ -1,0 +1,15 @@
+.carriage-number {
+  position: absolute;
+  top: 0;
+  left: 4.45%; /* 41px от ширины 921px (на экране 1920px) */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3.8%; /* 35px от ширины 921px (на экране 1920px) */
+  height: 16.78%; /* 25px от высоты 149px (на экране 1920px) */
+
+  color: #fff;
+  background-color: #000;
+}

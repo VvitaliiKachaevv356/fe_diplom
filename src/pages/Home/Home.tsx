@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import HeaderHome from '../../components/Sections/HeaderHome/HeaderHome';
-import Line from '../../components/UI/Line/Line';
-import SectionAbout from '../../components/Section/SectionAbout/SectionAbout';
-import SectionDescription from '../../components/Section/SectionDescription/SectionDescription';
-import SectionFeedback from '../../components/Section/SectionFeedback/SectionFeedback';
+import HeaderHome from '../../components/sections/HeaderHome/HeaderHome';
+import Line from '../../components/UI/other/Line/Line';
+import SectionAbout from '../../components/sections/SectionAbout/SectionAbout';
+import SectionDescription from '../../components/sections/SectionDescription/SectionDescription';
+import SectionFeedback from '../../components/sections/SectionFeedback/SectionFeedback';
 
 const Home = () => {
   const location = useLocation();

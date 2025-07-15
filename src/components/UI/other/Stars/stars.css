@@ -1,0 +1,26 @@
+.stars {
+  display: flex;
+  gap: 1.1875rem;
+}
+
+.stars__item {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../../../../assets/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stars__item:hover {
+  position: relative;
+  top: -0.3125rem;
+  cursor: pointer;
+}
+
+.stars__item_active {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../../../../assets/star-active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

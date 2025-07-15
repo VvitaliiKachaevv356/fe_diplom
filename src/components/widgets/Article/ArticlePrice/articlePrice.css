@@ -1,0 +1,16 @@
+.price {
+  padding: 37px 32px 62px 34px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.price__title {
+  margin-bottom: 7px;
+  font-size: 30px;
+}
+
+.price__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}

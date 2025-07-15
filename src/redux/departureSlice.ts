@@ -1,82 +1,129 @@
-import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
-import { IOrder } from "../models/models.ts"; // Убедитесь, что путь правильный
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { ICarriage, IOrder } from '../models/models';
 
-interface DepartureState {
-  routeDestinationId: number | null;
-  adultsCount: number;
-  childrenCount: number;
-  babyCount: number;
-  activePerson: number | null;
-  currentCarriageType: string | null;
-  typeCarriagesList: string[];
-  copyCurrentTypeCarriagesList: string[];
-  activeCarriageIndex: number | null;
+interface IDepartureState {
+  route_direction_id: string;
+
+  adults: {
+    count: number;
+    isActive: boolean;
+  };
+
+  children: {
+    count: number;
+    isActive: boolean;
+  };
+
+  baby: {
+    count: number;
+    isActive: boolean;
+  };
+
+  currentCarriageType: string;
+  currentTypeCarriagesList: ICarriage[];
+  currentCopyTypeCarriagesList: ICarriage[];
+  activeCarriageIndex: number;
+
   wiFiPrice: number;
   linensPrice: number;
+
   orderList: IOrder[];
 }
 
-const initialState: DepartureState = {
-  routeDestinationId: null,
-  adultsCount: 0,
-  childrenCount: 0,
-  babyCount: 0,
-  activePerson: null,
-  currentCarriageType: null,
-  typeCarriagesList: [],
-  copyCurrentTypeCarriagesList: [],
-  activeCarriageIndex: null,
-  wiFiPrice: 0,
-  linensPrice: 0,
-  orderList: [],
+const initialState: IDepartureState = {
+  route_direction_id: '',
+
+  adults: {
+    count: 0, // количество взрослых билетов
+    isActive: true, // активность вкладки
+  },
+
+  children: {
+    count: 0, // количество детских билетов
+    isActive: false, // активность вкладки
+  },
+
+  baby: {
+    count: 0, // количество детских билетов (без места)
+    isActive: false, // активность вкладки
+  },
+
+  currentCarriageType: '', // выбранный тип вагона ('first', 'second', 'third', 'fourth' или '')
+  currentTypeCarriagesList: [], // массив вагонов выбранного класса - для блокировки выбора мест
+  currentCopyTypeCarriagesList: [], // массив вагонов выбранного класса - с выбранными местами
+  activeCarriageIndex: 0, // индекс активного вагона
+
+  wiFiPrice: 0, // стоимость услуги 'wi-fi'
+  linensPrice: 0, // стоимость постельного белья
+
+  orderList: [], // массив объектов с заказанными билетами
 };
 
 const departureSlice = createSlice({
-  name: "departure",
+  name: 'departure',
   initialState,
   reducers: {
-    resetDepartureSlice: () => initialState,
-    setDepartureRouteDestinationId: (
-      state,
-      action: PayloadAction<number | null>
-    ) => {
-      state.routeDestinationId = action.payload;
+    resetDepartureSlice: (state) => {
+      state.route_direction_id = initialState.route_direction_id;
+      state.adults = initialState.adults;
+      state.children = initialState.children;
+      state.baby = initialState.baby;
+      state.currentCarriageType = initialState.currentCarriageType;
+      state.currentTypeCarriagesList = initialState.currentTypeCarriagesList;
+      state.currentCopyTypeCarriagesList =
+        initialState.currentCopyTypeCarriagesList;
+      state.activeCarriageIndex = initialState.activeCarriageIndex;
+      state.wiFiPrice = initialState.wiFiPrice;
+      state.linensPrice = initialState.linensPrice;
+      state.orderList = initialState.orderList;
+    },
+    setDepartureRouteDestinationId: (state, action: PayloadAction<string>) => {
+      state.route_direction_id = action.payload;
     },
     setDepartureAdultsCount: (state, action: PayloadAction<number>) => {
-      state.adultsCount = action.payload;
+      state.adults.count = action.payload;
     },
     setDepartureChildrenCount: (state, action: PayloadAction<number>) => {
-      state.childrenCount = action.payload;
+      state.children.count = action.payload;
     },
     setDepartureBabyCount: (state, action: PayloadAction<number>) => {
-      state.babyCount = action.payload;
+      state.baby.count = action.payload;
     },
-    setDepartureActivePerson: (state, action: PayloadAction<number | null>) => {
-      state.activePerson = action.payload;
+    setDepartureActivePerson: (state, action: PayloadAction<number>) => {
+      if (action.payload === 1) {
+        state.adults.isActive = false;
+        state.children.isActive = true;
+        state.baby.isActive = false;
+      } else if (action.payload === 2) {
+        state.adults.isActive = false;
+        state.children.isActive = false;
+        state.baby.isActive = true;
+      } else {
+        state.adults.isActive = true;
+        state.children.isActive = false;
+        state.baby.isActive = false;
+      }
     },
-    setDepartureCurrentCarriageType: (
-      state,
-      action: PayloadAction<string | null>
-    ) => {
+    setDepartureCurrentCarriageType: (state, action: PayloadAction<string>) => {
       state.currentCarriageType = action.payload;
     },
     setDepartureCurrentTypeCarriagesList: (
       state,
-      action: PayloadAction<string[]>
+      action: PayloadAction<ICarriage[]>
     ) => {
-      state.typeCarriagesList = action.payload;
+      state.currentTypeCarriagesList = JSON.parse(
+        JSON.stringify(action.payload)
+      );
     },
     setDepartureCopyCurrentTypeCarriagesList: (
       state,
-      action: PayloadAction<string[]>
+      action: PayloadAction<ICarriage[]>
     ) => {
-      state.copyCurrentTypeCarriagesList = action.payload;
+      state.currentCopyTypeCarriagesList = JSON.parse(
+        JSON.stringify(action.payload)
+      );
     },
-    setDepartureActiveCarriageIndex: (
-      state,
-      action: PayloadAction<number | null>
-    ) => {
+    setDepartureActiveCarriageIndex: (state, action: PayloadAction<number>) => {
       state.activeCarriageIndex = action.payload;
     },
     setDepartureWiFiPrice: (state, action: PayloadAction<number>) => {

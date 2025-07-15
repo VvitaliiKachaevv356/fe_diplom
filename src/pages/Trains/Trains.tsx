@@ -4,12 +4,12 @@ import { useSelector } from 'react-redux';
 
 import { RootState } from '../../redux/store';
 
-import Header from '../../components/Sections/Header/Header';
-import LineCurrent from '../../components/UI/LineCurrent/LineCurrent';
-import Loader from '../../components/UI/Loader/Loader';
-import SectionLastTickets from '../../components/Section/SectionLastTickets/SectionLastTickets';
-import SectionSettings from '../../components/Section/SectionSettings/SectionSettings';
-import SectionTickets from '../../components/Section/SectionTickets/SectionTickets';
+import Header from '../../components/sections/Header/Header';
+import LineCurrent from '../../components/UI/other/LineCurrent/LineCurrent';
+import Loader from '../../components/UI/other/Loader/Loader';
+import SectionLastTickets from '../../components/sections/SectionLastTickets/SectionLastTickets';
+import SectionSettings from '../../components/sections/SectionSettings/SectionSettings';
+import SectionTickets from '../../components/sections/SectionTickets/SectionTickets';
 
 const Trains = () => {
   const location = useLocation();

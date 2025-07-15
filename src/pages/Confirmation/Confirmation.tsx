@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { RootState } from '../../redux/store';
 
-import Header from '../../components/Sections/Header/Header';
-import LineCurrent from '../../components/UI/LineCurrent/LineCurrent';
-import Loader from '../../components/UI/Loader/Loader';
-import SectionConfirmation from '../../components/Section/SectionConfirmation/SectionConfirmation';
-import SectionDetails from '../../components/Section/SectionDetails/SectionDetails';
+import Header from '../../components/sections/Header/Header';
+import LineCurrent from '../../components/UI/other/LineCurrent/LineCurrent';
+import Loader from '../../components/UI/other/Loader/Loader';
+import SectionConfirmation from '../../components/sections/SectionConfirmation/SectionConfirmation';
+import SectionDetails from '../../components/sections/SectionDetails/SectionDetails';
 
 const Confirmation = () => {
   const location = useLocation();

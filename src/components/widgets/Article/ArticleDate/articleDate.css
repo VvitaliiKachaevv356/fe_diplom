@@ -1,0 +1,30 @@
+.date {
+  padding: 43px 36px 33px 29px;
+
+  font-weight: 400;
+  color: #fff;
+}
+
+.date__type {
+  display: block;
+  margin-bottom: 11px;
+
+  font-size: 30px;
+}
+
+.date__container:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+/* Переопределение стилей для компонента MyDatePicker: */
+.date .date-picker__component {
+  padding: 11px 50px 11px 11px;
+  max-width: 100%;
+}
+
+.date .date-picker__icon {
+  right: 20px;
+
+  width: 20px;
+  height: 23px;
+}

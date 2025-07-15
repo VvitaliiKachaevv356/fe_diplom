@@ -1,0 +1,32 @@
+.choose-seats {
+  display: flex;
+  padding-right: 1px;
+}
+
+.choose-seats__link {
+  margin-left: auto;
+
+  width: 100%;
+
+  padding: 5px 29px 5px 24px;
+  border: 1px solid #ffa800;
+  border-radius: 5px;
+
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+
+  background-color: #ffa800;
+}
+
+.choose-seats__link:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.choose-seats__link:active {
+  color: #ffa800;
+
+  box-shadow: none;
+  background-color: #fff;
+}

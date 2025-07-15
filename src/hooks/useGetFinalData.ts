@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../redux/store";
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/store';
 
 const useGetFinalData = () => {
   const {
@@ -30,14 +30,14 @@ const useGetFinalData = () => {
     first_name: payerFirstName.value,
     last_name: payerLastName.value,
     patronymic: payerMiddleName.value,
-    phone: "8" + phoneNumber.value.slice(2), // замена '+7' на '8'
+    phone: '8' + phoneNumber.value.slice(2), // замена '+7' на '8'
     email: email.value,
-    payment_method: cash ? "cash" : "online",
+    payment_method: cash ? 'cash' : 'online',
   };
 
   // массив данных о взрослых пассажирах:
   const adultPassengersInfo = passengersList
-    .filter((passenger) => passenger.data.type === "Взрослый")
+    .filter((passenger) => passenger.data.type === 'Взрослый')
     .map((passenger) => {
       const {
         lastName,
@@ -55,15 +55,15 @@ const useGetFinalData = () => {
         last_name: lastName.value,
         patronymic: middleName.value,
         gender,
-        birthday: birthdate.value.split(".").reverse().join("-"),
-        document_type: "паспорт",
+        birthday: birthdate.value.split('.').reverse().join('-'),
+        document_type: 'паспорт',
         document_data: `${passportSeries.value} ${passportNumber.value}`,
       };
     });
 
   // массив данных о детях пассажирах:
   const childrenPassengersInfo = passengersList
-    .filter((passenger) => passenger.data.type === "Детский")
+    .filter((passenger) => passenger.data.type === 'Детский')
     .map((passenger) => {
       const {
         lastName,
@@ -80,8 +80,8 @@ const useGetFinalData = () => {
         last_name: lastName.value,
         patronymic: middleName.value,
         gender,
-        birthday: birthdate.value.split(".").reverse().join("-"),
-        document_type: "свидетельство",
+        birthday: birthdate.value.split('.').reverse().join('-'),
+        document_type: 'свидетельство',
         document_data: certificateNumber.value,
       };
     });

@@ -1,9 +1,9 @@
-import Logo from '../Logo/Logo';
-import Menu from '../Menu/Menu';
-import SearchForm from '../../Features/booking/SearchForm/SearchForm';
-import Title from '../../Title/Title';
+import Logo from "../../UI/other/Logo/Logo";
+import Menu from "../../sections/Menu/Menu";
+import SearchForm from "../../widgets/SearchForm/SearchForm/SearchForm";
+import Title from "../../UI/text/Title/Title";
 
-import './headerHome.css';
+import "./headerHome.css";
 
 const HeaderHome = () => {
   return (
@@ -21,3 +21,5 @@ const HeaderHome = () => {
 };
 
 export default HeaderHome;
+
+

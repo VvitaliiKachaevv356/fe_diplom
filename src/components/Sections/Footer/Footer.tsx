@@ -1,16 +1,16 @@
-import { useEffect, useRef } from 'react';
-import Contacts from '../../Sections/Contacts/Contacts';
-import Copyrights from '../Copyrights/Copyrights';
-import Logo from '../Logo/Logo';
-import Socials from '../../Socials/Socials';
-import SubscribeForm from '../../SubscribeForm/SubscribeForm';
-import './footer.css';
+import { useEffect, useRef } from "react";
+import Contacts from "../../UI/inputs/Contacts/Contacts";
+import Copyrights from "../../UI/text/Copyrights/Copyrights";
+import Logo from "../../UI/other/Logo/Logo";
+import Socials from "../../UI/button/Socials/Socials";
+import SubscribeForm from "../../widgets/SubscribeForm/SubscribeForm";
+import "./footer.css";
 
 const Footer = () => {
   const refElement = useRef<HTMLDivElement | null>(null);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

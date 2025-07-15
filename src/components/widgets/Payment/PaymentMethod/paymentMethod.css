@@ -1,0 +1,72 @@
+.payment-method__title {
+  padding: 2.1875rem;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #292929;
+  background-color: #f9f9f9;
+}
+
+.payment-method__online {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 3.125rem 2.0625rem 4.4375rem 2.0625rem;
+  border-top: 1px dashed #928f94;
+}
+
+.payment-method__online-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-right: 12.5rem;
+}
+
+.payment-method__online-item {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #292929;
+}
+
+.payment-method__cash {
+  padding: 3.625rem 2.25rem 5.0625rem 2.0625rem;
+  border-top: 1px dashed #928f94;
+}
+
+.payment-method__label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #928f94;
+}
+
+.payment-method__label::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid #928f94;
+  border-radius: 0.3125rem;
+  vertical-align: bottom;
+  margin-right: 1.25rem;
+}
+
+.payment-method__input:checked + .payment-method__label::before {
+  border-color: #ffa800;
+  background-size: 1.25rem 1.25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../../assets/checked.svg");
+}
+
+.payment-method__input:checked + .payment-method__label {
+  color: #ffa800;
+}
+
+.payment-method__input:focus + .payment-method__label::before {
+  border: 3px solid #ffa800;
+}
+
+@media (max-width: 992px) {
+  .payment-method__online-list {
+    padding-right: 0;
+  }
+}

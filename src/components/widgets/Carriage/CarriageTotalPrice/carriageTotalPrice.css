@@ -1,0 +1,19 @@
+.carriage-total-price {
+  position: absolute;
+  top: 114.77%; /* 171px */
+  right: 2.17%; /* 20px */
+
+  display: flex;
+  gap: 12px;
+
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.carriage-total-price__cost {
+  color: #000;
+}
+
+.carriage-total-price__currency {
+  color: #928f94;
+}

@@ -1,0 +1,101 @@
+.check-passengers {
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.check-passengers__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-passengers__list {
+  width: 100%;
+  padding: 30px 0px 57px 0px;
+}
+
+.check-passengers__item {
+  display: flex;
+  gap: 30px;
+
+  padding: 31px 26px;
+
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.check-passengers__item:not(:last-child) {
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.check-passengers__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.check-passengers__img {
+  width: 68px;
+  height: 68px;
+}
+
+.check-passengers__type {
+  color: #292929;
+  text-align: center;
+}
+
+.check-passengers__full-name {
+  margin-bottom: 14px;
+
+  color: #292929;
+}
+
+.check-passengers__sex,
+.check-passengers__date-of-birth,
+.check-passengers__document {
+  margin-bottom: 9px;
+
+  color: #928f94;
+}
+
+.check-passengers__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 28px;
+
+  width: 377px;
+
+  padding: 23px 21px 23px 25px;
+  border-left: 1px dashed #e5e5e5;
+}
+
+.check-passengers__total-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  font-size: 30px;
+}
+
+.check-passengers__text {
+  font-weight: 400;
+  color: #292929;
+}
+
+.check-passengers__price {
+  font-weight: 700;
+}
+
+.check-passengers__amount {
+  margin-right: 15px;
+
+  color: #292929;
+}
+
+.check-passengers__currency {
+  color: #928f94;
+}

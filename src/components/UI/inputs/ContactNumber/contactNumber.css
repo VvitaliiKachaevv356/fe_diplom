@@ -1,0 +1,41 @@
+.contact-number {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  width: 360px;
+
+  font-weight: 400;
+}
+
+.contact-number__label {
+  font-size: 16px;
+  color: #928f94;
+}
+
+/* поле  инпут - переопределение стандартного класса PhoneInputInput: */
+/* .contact-number__input {} */
+.PhoneInputInput {
+  padding: 10px 20px;
+  border: 1px solid #928f94;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #292929;
+}
+
+/* стили для инпута в случае ошибки */
+.contact-number__input_invalid > .PhoneInputInput {
+  border-color: transparent;
+  outline: 2px solid red;
+}
+
+/* плейсхолдер для инпута */
+/* .contact-number__input::placeholder {} */
+.PhoneInputInput::placeholder {
+  color: #c4c4c4;
+}
+
+/* cкрыть флаг страны */
+.PhoneInputCountry {
+  display: none;
+}
