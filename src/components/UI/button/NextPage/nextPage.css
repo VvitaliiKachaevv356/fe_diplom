@@ -18,6 +18,7 @@
 .next-page__navigation-link_inactive {
   cursor: default;
   background-color: #928f94;
+  color: black;
 }
 
 .next-page__navigation-link:not(.next-page__navigation-link_inactive):hover {

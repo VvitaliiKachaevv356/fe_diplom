@@ -1,4 +1,4 @@
-import './nextPage.css';
+import "./nextPage.css";
 
 interface INextPageProps {
   text: string;
@@ -6,9 +6,13 @@ interface INextPageProps {
   onNextClick: () => void;
 }
 
-const NextPage = ({ text, isActive, onNextClick }: INextPageProps) => {
-  const basicClass = 'next-page__navigation-link';
-  const inactiveClass = 'next-page__navigation-link_inactive';
+const NextPage = ({
+  text = "Следующий пассажир",
+  isActive,
+  onNextClick,
+}: INextPageProps) => {
+  const basicClass = "next-page__navigation-link";
+  const inactiveClass = "next-page__navigation-link_inactive";
 
   return (
     <div className="next-page">
@@ -21,5 +25,4 @@ const NextPage = ({ text, isActive, onNextClick }: INextPageProps) => {
     </div>
   );
 };
-
 export default NextPage;

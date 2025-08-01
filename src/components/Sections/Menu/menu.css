@@ -1,11 +1,14 @@
 .menu {
-  padding: 1.5625rem 16.125rem 2rem;
+  padding: 0.5rem 16.125rem 0.5rem;
   background: #292929;
 }
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 5.3125rem;
+  margin: 0;
+  padding-left: 0;
 }
 
 .menu__link {
@@ -14,6 +17,7 @@
   font-weight: 300;
   color: #fff;
   cursor: pointer;
+  padding: 25px 15px;
 }
 
 .menu__link:focus-visible,
