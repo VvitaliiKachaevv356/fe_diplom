@@ -1,9 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../../../redux/store';
-import { setIsOpen } from '../../../../redux/passengersSlice';
-import NextPassenger from '../../../UI/button/NextPage/NextPage';
-import success from '../../../../assets/success.svg';
-import './passengersCheckSuccess.css';
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../../../../redux/store";
+import { setIsOpen } from "../../../../redux/passengersSlice";
+import NextPassenger from "../../../UI/button/NextPage/NextPage";
+import success from "../../../../assets/success.svg";
+import "./passengersCheckSuccess.css";
 
 const PassengersCheckSuccess = ({ index }: { index: number }) => {
   const dispatch: AppDispatch = useDispatch();
@@ -19,11 +19,11 @@ const PassengersCheckSuccess = ({ index }: { index: number }) => {
       dispatch(setIsOpen({ index: index + 1, isOpen: true }));
       // NOTE: наверно можно было бы прокидывать рефки, но получится много лишнего кода, лишние пропсы, которые, например, в компоненте NextPage на каждом роуте вообще не нужны, имхо...
       const nextPassenger = document.getElementById(`passenger-${index + 1}`);
-      nextPassenger?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      nextPassenger?.scrollIntoView({ behavior: "smooth", block: "start" });
     } else {
       // если это была последняя карточка, то прокручиваем страницу до кнопки 'NextPage':
-      const nextPageButton = document.querySelector('.next-page');
-      nextPageButton?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      const nextPageButton = document.querySelector(".next-page");
+      nextPageButton?.scrollIntoView({ behavior: "smooth", block: "end" });
     }
   };
 
@@ -38,7 +38,11 @@ const PassengersCheckSuccess = ({ index }: { index: number }) => {
         <span className="passengers-check__text_success">Готово</span>
       </div>
 
-      <NextPassenger onClickHandler={handleNextPassengerClick} />
+      <NextPassenger
+        onClick={handleNextPassengerClick}
+        text="Готово"
+        isActive={true}
+      />
     </div>
   );
 };

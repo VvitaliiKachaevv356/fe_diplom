@@ -1,17 +1,17 @@
-import { useDispatch } from 'react-redux';
-import { AppDispatch } from '../../../../redux/store';
-import { openModal } from '../../../../redux/modalSlice';
-import NextPassenger from '../../../UI/button/NextPage/NextPage';
-import './passengersNotChecked.css';
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../../redux/store";
+import { openModal } from "../../../../redux/modalSlice";
+import NextPassenger from "../../../UI/button/NextPage/NextPage";
+import "./passengersNotChecked.css";
 
 const PassengersNotChecked = () => {
   const dispatch: AppDispatch = useDispatch();
 
   const handleNextPassengerClick = () => {
     const modalOptions = {
-      type: 'warning',
-      title: 'Не все поля заполнены!',
-      text: 'Пожалуйста, проверьте что Вы внесли все данные для этого пассажира!',
+      type: "warning",
+      title: "Не все поля заполнены!",
+      text: "Пожалуйста, проверьте что Вы внесли все данные для этого пассажира!",
     };
 
     dispatch(openModal(modalOptions));
@@ -19,7 +19,11 @@ const PassengersNotChecked = () => {
 
   return (
     <div className="passengers-not-checked">
-      <NextPassenger onClickHandler={handleNextPassengerClick} />
+      <NextPassenger
+        onClick={handleNextPassengerClick}
+        text="Продолжить" // добавьте обязательные пропсы
+        isActive={true}
+      />
     </div>
   );
 };

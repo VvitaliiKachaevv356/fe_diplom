@@ -3,7 +3,8 @@ import "./nextPage.css";
 interface INextPageProps {
   text: string;
   isActive: boolean;
-  onNextClick: () => void;
+  onClick?: () => void; // сделайте необязательным
+  onNextClick?: () => void; // или оставьте только один обработчик
 }
 
 const NextPage = ({

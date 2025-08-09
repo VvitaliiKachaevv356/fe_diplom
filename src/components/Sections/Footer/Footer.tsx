@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Contacts from "../../UI/inputs/Contacts/Contacts";
 import Copyrights from "../../UI/text/Copyrights/Copyrights";
 import Logo from "../../UI/other/Logo/Logo";
