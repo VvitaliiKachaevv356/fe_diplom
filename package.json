@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://VvitaliiKachaevv356.github.io/",
+  "homepage": "https://vvitaliikachaevv356.github.io/fe_diplom/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "date-fns": "^4.1.0",
