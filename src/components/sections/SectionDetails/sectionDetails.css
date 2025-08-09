@@ -1,0 +1,16 @@
+.details {
+  background: #3e3c41;
+}
+
+.details__title {
+  padding: 2.1875rem 2.75rem;
+  border-bottom: 1px solid #fff;
+  font-size: 1.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #e5e5e5;
+}
+
+.details article:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}

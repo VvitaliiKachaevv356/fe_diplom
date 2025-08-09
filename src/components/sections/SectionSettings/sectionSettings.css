@@ -1,0 +1,9 @@
+.settings {
+  font-weight: 400;
+  color: #fff;
+  background-color: #3e3c41;
+}
+
+.settings article:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}

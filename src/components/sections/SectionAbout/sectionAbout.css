@@ -1,0 +1,43 @@
+.about {
+  padding: 9rem 29.0625rem 7.1875rem 16.0625rem;
+}
+
+.about__title {
+  margin-bottom: 1.875rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.about__content {
+  padding-left: 1.1875rem;
+  padding-bottom: 0.5rem;
+  border-left: 0.5625rem solid #ffa800;
+}
+
+.about__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #292929;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 1.6875rem;
+}
+
+.about__text_bold {
+  font-weight: 700;
+}
+
+@media (max-width: 1830px) {
+  .about {
+    padding-right: 16.0625rem;
+  }
+}
+
+@media (max-width: 1330px) {
+  .about {
+    padding: 3.125rem;
+  }
+}
