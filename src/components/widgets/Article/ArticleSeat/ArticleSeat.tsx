@@ -3,8 +3,8 @@ import { RootState } from '../../../../redux/store';
 
 import Carriages from '../../../widgets/Carriage/Carriages/Carriages';
 import CarriageType from '../../../widgets/Carriage/CarriageType/CarriageType';
-import SeatsCount from '../../../widgets/SeatSelection/SeatsCount/SeatsCount';
-import SeatHeader from '../../../widgets/SeatSelection/SeatHeader/SeatHeader';
+import SeatsCount from '../../../widgets/SeatSelection/SeatsCount';
+import SeatHeader from '../../../widgets/SeatSelection/SeatHeader';
 import TrainInfo from '../../../widgets/TrainInfo/TrainInfo';
 
 import './articleSeat.css';

@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import Contacts from "../../UI/inputs/Contacts/Contacts";
-import Copyrights from "../../UI/text/Copyrights/Copyrights";
-import Logo from "../../UI/other/Logo/Logo";
-import Socials from "../../UI/button/Socials/Socials";
+import Copyrights from "../../UI/text/Copyrights";
+import Logo from "../../UI/other/Logo";
+import Socials from "../../UI/button/Socials";
 import SubscribeForm from "../../widgets/SubscribeForm/SubscribeForm";
 import "./footer.css";
 

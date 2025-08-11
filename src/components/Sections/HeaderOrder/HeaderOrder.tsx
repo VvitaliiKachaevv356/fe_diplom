@@ -1,4 +1,4 @@
-import Logo from '../../UI/other/Logo/Logo';
+import Logo from '../../UI/other/Logo';
 import Menu from '../../sections/Menu/Menu';
 
 import './headerOrder.css';

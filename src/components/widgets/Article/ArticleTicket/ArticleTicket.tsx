@@ -7,9 +7,9 @@ import { AppDispatch, RootState } from '../../../../redux/store';
 import { resetArrivalSlice } from '../../../../redux/arrivalSlice';
 import { resetDepartureSlice } from '../../../../redux/departureSlice';
 
-import ChangeData from '../../../widgets/ProfileSetting/ChangeData/ChangeData';
-import ChooseSeats from '../../../widgets/SeatSelection/ChooseSeats/ChooseSeats';
-import TooltipPrice from '../../../UI/other/TooltipPrice/TooltipPrice';
+import ChangeData from '../../ProfileSetting/ChangeData';
+import ChooseSeats from '../../../widgets/SeatSelection/ChooseSeats';
+import TooltipPrice from '../../../UI/other/TooltipPrice';
 
 import arrowLeft from '../../../../assets/arrow-left.svg';
 import arrowRight from '../../../../assets/arrow-right.svg';

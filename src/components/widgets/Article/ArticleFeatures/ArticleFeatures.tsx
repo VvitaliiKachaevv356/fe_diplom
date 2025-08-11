@@ -1,4 +1,4 @@
-import Slider from '../../../UI/other/Slider/Slider';
+import Slider from '../../../UI/other/Slider';
 
 import compartment from '../../../../assets/compartment.svg';
 import platzkart from '../../../../assets/platzkart.svg';

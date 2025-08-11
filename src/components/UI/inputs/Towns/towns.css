@@ -4,7 +4,6 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.59375rem;
   padding: 1.1875rem 1.875rem 0.6875rem 1.875rem;
   width: 100%;
   min-height: 95%;
@@ -14,7 +13,8 @@
 }
 
 .towns__item {
-  width: fit-content;
+  width: 100%;
+  padding: 7px 30px 7px 0px;
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.0625rem;

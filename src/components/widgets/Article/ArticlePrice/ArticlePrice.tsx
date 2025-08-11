@@ -1,4 +1,4 @@
-import SliderPriceRange from '../../../UI/other/SliderPriceRange/SliderPriceRange';
+import SliderPriceRange from '../../../UI/other/SliderPriceRange';
 
 import './articlePrice.css';
 

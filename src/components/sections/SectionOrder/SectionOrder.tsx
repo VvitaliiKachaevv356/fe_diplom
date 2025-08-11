@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
 import useGetTotalPrice from '../../../hooks/useGetTotalPrice';
-import GoHome from '../../UI/button/GoHome/GoHome';
-import Stars from '../../UI/other/Stars/Stars';
+import GoHome from '../../UI/button/GoHome';
+import Stars from '../../UI/other/Stars';
 import './sectionOrder.css';
 
 const SectionOrder = () => {

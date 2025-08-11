@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../../redux/store";
 import { setIsOpen } from "../../../../redux/passengersSlice";
-import NextPassenger from "../../../UI/button/NextPage/NextPage";
+import NextPassenger from "../../../UI/button/NextPage";
 import success from "../../../../assets/success.svg";
 import "./passengersCheckSuccess.css";
 

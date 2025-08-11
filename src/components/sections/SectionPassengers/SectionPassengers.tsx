@@ -4,7 +4,7 @@ import { AppDispatch, RootState } from '../../../redux/store';
 import { openModal } from '../../../redux/modalSlice';
 import AddPassenger from '../../widgets/Passenger/AddPassenger/AddPassenger';
 import ArticlePassenger from '../../widgets/Article/ArticlePassenger/ArticlePassenger';
-import NextPage from '../../UI/button/NextPage/NextPage';
+import NextPage from '../../UI/button/NextPage';
 import './sectionPassengers.css';
 
 const SectionPassengers = () => {

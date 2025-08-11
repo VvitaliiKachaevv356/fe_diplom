@@ -1,21 +1,21 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
 
-import { AppDispatch, RootState } from '../../../../redux/store';
+import { AppDispatch, RootState } from "../../../../redux/store";
 import {
   setStartTown,
   setStartTownTooltip,
   setEndTown,
   setEndTownTooltip,
-} from '../../../../redux/searchFormSlice';
+} from "../../../../redux/searchFormSlice";
 import {
   clearTowns,
   setIsClicked,
   setIsOpenedStartList,
   setIsOpenedEndList,
-} from '../../../../redux/townsSlice';
+} from "../../../../redux/townsSlice";
 
-import { ITown } from '../../../../models/models';
-import './towns.css';
+import { ITown } from "../../../../models/models";
+import "./towns.css";
 
 const Towns = ({ isStart }: { isStart: boolean }) => {
   const dispatch: AppDispatch = useDispatch();
@@ -27,13 +27,13 @@ const Towns = ({ isStart }: { isStart: boolean }) => {
 
     if (isStart) {
       dispatch(setStartTown(town)); // устанавливаем выбранный город
-      dispatch(setStartTownTooltip('')); // убираем подсказку (если она есть)
+      dispatch(setStartTownTooltip("")); // убираем подсказку (если она есть)
       dispatch(setIsOpenedStartList(false)); // закрываем список с городами
       return;
     }
 
     dispatch(setEndTown(town)); // устанавливаем выбранный город
-    dispatch(setEndTownTooltip('')); // убираем подсказку (если она есть)
+    dispatch(setEndTownTooltip("")); // убираем подсказку (если она есть)
     dispatch(setIsOpenedEndList(false)); // закрываем список с городами
   };
 

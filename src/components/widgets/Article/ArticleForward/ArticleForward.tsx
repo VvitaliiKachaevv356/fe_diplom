@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../../../redux/store';
 import { setArticleForwardCheckbox } from '../../../../redux/checkboxSlice';
-import Arrival from '../../../widgets/TripInfo/Arrival/Arrival';
-import Departure from '../../../widgets/TripInfo/Departure/Departure';
+import Arrival from '../../../widgets/TripInfo/Arrival';
+import Departure from '../../../widgets/TripInfo/Departure';
 import forward from '../../../../assets/forward.svg';
 import './articleForward.css';
 

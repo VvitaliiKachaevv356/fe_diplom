@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import useGetTotalPrice from '../../../../hooks/useGetTotalPrice';
 import { RootState } from '../../../../redux/store';
-import ChangeData from '../../../widgets/ProfileSetting/ChangeData/ChangeData';
-import TitleCheck from '../../../UI/text/TitleCheck/TitleCheck';
+import ChangeData from '../../ProfileSetting/ChangeData';
+import TitleCheck from '../../../UI/text/TitleCheck';
 import avatar from '../../../../assets/avatar.svg';
 import './articleCheckPassengers.css';
 

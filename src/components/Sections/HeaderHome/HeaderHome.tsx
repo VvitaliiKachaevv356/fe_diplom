@@ -1,7 +1,7 @@
-import Logo from "../../UI/other/Logo/Logo";
+import Logo from "../../UI/other/Logo";
 import Menu from "../../sections/Menu/Menu";
-import SearchForm from "../../widgets/SearchForm/SearchForm/SearchForm";
-import Title from "../../UI/text/Title/Title";
+import SearchForm from "../../widgets/SearchForm/SearchForm";
+import Title from "../../UI/text/Title";
 
 import "./headerHome.css";
 

@@ -7,7 +7,7 @@ import {
   setIsOpen,
   setIsDataValid,
 } from '../../../../redux/passengersSlice';
-import Birthdate from '../../../widgets/PassengerDocument/Birthdate/Birthdate';
+import Birthdate from '../../../widgets/PassengerDocument/Birthdate';
 import Documents from '../../../widgets/Documents/Documents';
 import FullName from '../../../UI/inputs/FullName/FullName';
 import Gender from '../../../UI/inputs/Gender/Gender';

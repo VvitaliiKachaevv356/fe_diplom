@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
 import ArticleTicket from '../..//widgets/Article/ArticleTicket/ArticleTicket';
-import Pagination from '../../UI/navigation/Pagination/Pagination';
+import Pagination from '../../UI/navigation/Pagination';
 import TicketsView from '../../widgets/TicketsView/TicketsView';
 import './sectionTickets.css';
 

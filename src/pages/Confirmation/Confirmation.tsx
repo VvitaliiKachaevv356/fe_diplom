@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom';
 import { RootState } from '../../redux/store';
 
 import Header from '../../components/sections/Header/Header';
-import LineCurrent from '../../components/UI/other/LineCurrent/LineCurrent';
-import Loader from '../../components/UI/other/Loader/Loader';
+import LineCurrent from '../../components/UI/other/LineCurrent';
+import Loader from '../../components/UI/other/Loader';
 import SectionConfirmation from '../../components/sections/SectionConfirmation/SectionConfirmation';
 import SectionDetails from '../../components/sections/SectionDetails/SectionDetails';
 

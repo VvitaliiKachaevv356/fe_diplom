@@ -21,7 +21,7 @@ import {
 import { fetchLastTickets } from "../../../../redux/lastTicketsSlice";
 import { fetchTrains } from "../../../../redux/trainsSlice";
 
-import Tooltip from "../../../UI/other/Tooltip/Tooltip";
+import Tooltip from "../../../UI/other/Tooltip";
 
 import "react-datepicker/dist/react-datepicker.css";
 import "./myDatePicker.css";

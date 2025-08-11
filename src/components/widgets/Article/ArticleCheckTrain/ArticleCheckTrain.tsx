@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../redux/store';
 import ArticleTicket from '../../../widgets/Article/ArticleTicket/ArticleTicket';
-import TitleCheck from '../../../UI/text/TitleCheck/TitleCheck';
+import TitleCheck from '../../../UI/text/TitleCheck';
 import './articleCheckTrain.css';
 
 const ArticleCheckTrain = () => {

@@ -5,8 +5,8 @@ import { openModal } from '../../../redux/modalSlice';
 import ContactNumber from '../../UI/inputs/ContactNumber/ContactNumber';
 import Email from '../../UI/inputs/Email/Email';
 import FullName from '../../UI/inputs/FullName/FullName';
-import NextPage from '../../UI/button/NextPage/NextPage';
-import PaymentMethod from '../../widgets/Payment/PaymentMethod/PaymentMethod';
+import NextPage from '../../UI/button/NextPage';
+import PaymentMethod from '../../widgets/Payment/PaymentMethod';
 import './sectionPayment.css';
 
 const SectionPayment = () => {

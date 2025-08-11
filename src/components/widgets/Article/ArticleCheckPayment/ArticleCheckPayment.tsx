@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../redux/store';
-import ChangeData from '../../../widgets/ProfileSetting/ChangeData/ChangeData';
-import TitleCheck from '../../../UI/text/TitleCheck/TitleCheck';
+import ChangeData from '../../ProfileSetting/ChangeData';
+import TitleCheck from '../../../UI/text/TitleCheck';
 import './articleCheckPayment.css';
 
 const ArticleCheckPayment = () => {

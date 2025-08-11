@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../../redux/store";
 import { openModal } from "../../../../redux/modalSlice";
-import NextPassenger from "../../../UI/button/NextPage/NextPage";
+import NextPassenger from "../../../UI/button/NextPage";
 import "./passengersNotChecked.css";
 
 const PassengersNotChecked = () => {

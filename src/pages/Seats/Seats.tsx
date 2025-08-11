@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 
 import Header from '../../components/sections/Header/Header';
-import LineCurrent from '../../components/UI/other/LineCurrent/LineCurrent';
-import Loader from '../../components/UI/other/Loader/Loader';
+import LineCurrent from '../../components/UI/other/LineCurrent';
+import Loader from '../../components/UI/other/Loader';
 import SectionLastTickets from '../../components/sections/SectionLastTickets/SectionLastTickets';
 import SectionSeats from '../../components/sections/SectionSeats/SectionSeats';
 import SectionSettings from '../../components/sections/SectionSettings/SectionSettings';

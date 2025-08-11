@@ -7,8 +7,8 @@ import {
   setPassportNumber,
   setCertificateNumber,
 } from '../../../redux/passengersSlice';
-import BirthCertificate from '../../widgets/PassengerDocument/BirthCertificate/BirthCertificate';
-import Passport from '../../widgets/Documents/Passport/Passport';
+import BirthCertificate from '../../widgets/PassengerDocument/BirthCertificate';
+import Passport from '../../widgets/Documents/Passport';
 import './documents.css';
 
 interface IDocumentsProps {

@@ -7,7 +7,7 @@ import useGetFinalData from '../../../hooks/useGetFinalData';
 import ArticleCheckPassengers from '../../widgets/Article/ArticleCheckPassengers/ArticleCheckPassengers';
 import ArticleCheckPayment from '../../widgets/Article/ArticleCheckPayment/ArticleCheckPayment';
 import ArticleCheckTrain from '../../widgets/Article/ArticleCheckTrain/ArticleCheckTrain';
-import NextPage from '../../UI/button/NextPage/NextPage';
+import NextPage from '../../UI/button/NextPage';
 import './sectionConfirmation.css';
 
 const SectionConfirmation = () => {
